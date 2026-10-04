@@ -7,4 +7,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+
+  base: '/scroll-driven-hero-animation/',
 })

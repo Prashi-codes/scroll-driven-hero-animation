@@ -20,20 +20,15 @@ body {
   background: #080808;
   color: white;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
+  overflow-x: hidden;}
 
 
-/* ------------------------------
-   HERO
------------------------------- */
+/* -----------------HERO---------------- */
 
 .hero {
   min-height: 180vh;
   width: 100%;
-
   position: relative;
-
   background:
     radial-gradient(
       circle at center,
@@ -43,124 +38,74 @@ body {
     );
 }
 
-
-/* ------------------------------
-   HERO CONTENT
------------------------------- */
+/* ---------------HERO CONTENT----------------- */
 
 .hero-content {
   position: sticky;
   top: 0;
-
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-
   padding: 40px;
-
   overflow: hidden;
 }
-
-
-/* ------------------------------
-   HEADLINE
------------------------------- */
+/* ------------------HEADLINE---------------- */
 
 .headline {
   position: relative;
   z-index: 10;
-
   font-size: clamp(30px, 5vw, 75px);
-
   font-weight: 700;
-
   text-align: center;
-
   letter-spacing: 8px;
-
   line-height: 1.1;
 }
 
-
-/* ------------------------------
-   STATISTICS
------------------------------- */
+/* -------------------STATISTICS---------------- */
 
 .stats {
   position: relative;
   z-index: 10;
-
   width: min(100%, 1000px);
-
   margin-top: 80px;
-
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 60px 100px;
 }
 
-
 .stat {
   display: flex;
-
   align-items: center;
-
   gap: 20px;
 }
 
-
 .stat h2 {
   font-size: 55px;
-
   font-weight: 800;
-
   line-height: 1;
 }
-
-
 .stat p {
   max-width: 180px;
-
   color: #999;
-
   font-size: 13px;
-
   line-height: 1.5;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
 }
 
-
-/* ------------------------------
-   SCROLL TEXT
------------------------------- */
-
+/* -------------------SCROLL TEXT------------------- */
 .scroll-text {
   position: absolute;
-
   bottom: 30px;
-
   left: 50%;
-
   transform: translateX(-50%);
-
   z-index: 20;
-
   color: #888;
-
   font-size: 11px;
-
   letter-spacing: 4px;
 }
-
 
 /* ------------------------------
    CAR
@@ -170,73 +115,59 @@ body {
   position: absolute;
 
   left: 0;
-  top: 55%;
+  top: 58%;
 
   width: 100%;
+  height: 200px;
 
   pointer-events: none;
 
-  z-index: 5;
+  z-index: 50;
+
+  overflow: visible;
 }
 
-
 .car {
-  width: 650px;
+  display: block;
 
-  max-width: none;
+  width: 500px;
+  height: auto;
+
+  position: absolute;
+  left: 0;
+  top: 0;
 
   transform: translateX(100vw);
 
   will-change: transform;
-
-  display: block;
 }
 
-
-/* ------------------------------
-   SECOND SECTION
------------------------------- */
-
+/* ---------------SECOND SECTION------------------- */
 .next-section {
   min-height: 100vh;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: center;
-
   align-items: center;
-
   text-align: center;
-
   padding: 40px;
-
   background: #111;
 }
 
-
 .next-section h2 {
   font-size: clamp(35px, 6vw, 80px);
-
   margin-bottom: 20px;
 }
 
-
 .next-section p {
   max-width: 600px;
-
   color: #999;
-
   font-size: 18px;
-
   line-height: 1.6;
 }
 
 
-/* ------------------------------
-   MOBILE
------------------------------- */
+/* ----------MOBILE------- */
 
 @media (max-width: 768px) {
 
@@ -244,48 +175,33 @@ body {
     padding: 30px 20px;
   }
 
-
   .headline {
     font-size: 25px;
 
     letter-spacing: 4px;
   }
 
-
   .stats {
     grid-template-columns: 1fr;
-
     gap: 30px;
-
     margin-top: 60px;
   }
-
-
   .stat h2 {
     font-size: 42px;
   }
-
-
   .stat p {
     font-size: 11px;
   }
-
-
   .car {
     width: 400px;
   }
-
-
   .car-container {
     top: 60%;
   }
 
-
   .next-section h2 {
     font-size: 40px;
   }
-
-
   .next-section p {
     font-size: 15px;
   }
